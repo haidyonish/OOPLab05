@@ -209,14 +209,12 @@ public class ArrayTabulatedFunction implements TabulatedFunction, Externalizable
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder("{");
-
         for (int i = 0; i < size; i++) {
             sb.append(points[i]);
             if (i < size - 1) {
                 sb.append(", ");
             }
         }
-
         sb.append("}");
         return sb.toString();
     }
@@ -237,11 +235,9 @@ public class ArrayTabulatedFunction implements TabulatedFunction, Externalizable
         if (!(o instanceof TabulatedFunction other)) {
             return false;
         }
-
         if (size != other.getPointsCount()) {
             return false;
         }
-
         if (o instanceof ArrayTabulatedFunction arrayFunc) {
             for (int i = 0; i < size; i++) {
                 if (!points[i].equals(arrayFunc.points[i])) {
@@ -250,13 +246,11 @@ public class ArrayTabulatedFunction implements TabulatedFunction, Externalizable
             }
             return true;
         }
-
         for (int i = 0; i < size; i++) {
             if (!points[i].equals(other.getPoint(i))) {
                 return false;
             }
         }
-
         return true;
     }
 

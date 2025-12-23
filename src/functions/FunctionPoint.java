@@ -104,8 +104,7 @@ public class FunctionPoint {
         if (!(o instanceof FunctionPoint point)) {
             return false;
         }
-
-        return Math.abs(x - point.x) < 1e-10 && Math.abs(y - point.y) < 1e-10;
+        return Double.compare(x, point.x) == 0 && Double.compare(y, point.y) == 0;
     }
 
     /**

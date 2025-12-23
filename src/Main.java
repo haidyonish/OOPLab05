@@ -97,17 +97,17 @@ public class Main {
         TabulatedFunction listClone =
                 (TabulatedFunction) listFunc.clone();
 
-        System.out.println("arrayFunc2:");
-        System.out.println(arrayFunc2);
-        System.out.println("arrayClone:");
-        System.out.println(arrayClone);
+        System.out.println("arrayFunc2: " + arrayFunc2);
+        System.out.println("hashCode arrayFunc2: " + arrayFunc2.hashCode());
+        System.out.println("arrayClone: " + arrayClone);
+        System.out.println("hashCode arrayClone: " + arrayClone.hashCode());
 
         System.out.println();
 
-        System.out.println("listFunc:");
-        System.out.println(listFunc);
-        System.out.println("listClone:");
-        System.out.println(listClone);
+        System.out.println("listFunc: " + listFunc);
+        System.out.println("hashCode listFunc: " + listFunc.hashCode());
+        System.out.println("listClone: " + listClone);
+        System.out.println("hashCode listClone: " + listClone.hashCode());
 
         System.out.println();
 
@@ -116,17 +116,17 @@ public class Main {
         arrayFunc2.setPointY(0, 100.0);
         listFunc.setPointY(0, 200.0);
 
-        System.out.println("arrayFunc2 (изменён):");
-        System.out.println(arrayFunc2);
-        System.out.println("arrayClone (должен остаться прежним):");
-        System.out.println(arrayClone);
+        System.out.println("arrayFunc2:" + arrayFunc2);
+        System.out.println("hashCode arrayFunc2: " + arrayFunc2.hashCode());
+        System.out.println("arrayClone:" + arrayClone);
+        System.out.println("hashCode arrayClone: " + arrayClone.hashCode());
 
         System.out.println();
 
-        System.out.println("listFunc (изменён):");
-        System.out.println(listFunc);
-        System.out.println("listClone (должен остаться прежним):");
-        System.out.println(listClone);
+        System.out.println("listFunc:" + listFunc);
+        System.out.println("hashCode listFunc: " + listFunc.hashCode());
+        System.out.println("listClone:" + listClone);
+        System.out.println("hashCode listClone: " + listClone.hashCode());
 
         System.out.println();
         System.out.println("===== ПРОВЕРКА ЗАВЕРШЕНА =====");
